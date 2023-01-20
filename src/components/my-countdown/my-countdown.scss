@@ -1,0 +1,32 @@
+.countdown {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 8px 15px;
+  border: 2px solid;
+  border-radius: 10px;
+  max-width: fit-content;
+  text-align: center;
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__body {
+    display: flex;
+
+    &__section {
+      margin: 0 10px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__time {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__finished {
+    margin: 0;
+  }
+}
