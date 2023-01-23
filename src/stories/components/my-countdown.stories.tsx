@@ -4,7 +4,7 @@ import storyGenerator from 'story-wc-generator';
 const { args, argTypes, Template } = storyGenerator('my-countdown', {
   'name': { value: 'Countdown Title', description: 'The alert text', type: 'string' },
   'end-date': {
-    value: new Date().valueOf(),
+    value: new Date().valueOf() + 86400000,
     description: 'The End Date of the Countdown in a Unix Timestamp type',
     control: 'date',
     type: 'num',

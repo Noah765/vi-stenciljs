@@ -11,7 +11,7 @@ export class MyCountdown {
   @State() currentTime: any[] = [];
   @State() finished: boolean = false;
 
-  componentDidLoad() {
+  componentWillLoad() {
     if (this.checkFinished()) return;
 
     this.currentTime = this.getCountdownTime();
