@@ -9,6 +9,15 @@
     <script nomodule src="/build/vi-stenciljs.js"></script>
   </head>
   <body>
+    <main-search-input></main-search-input>
+
+    <script>
+      document.querySelector('main-search-input').categories = [
+        { text: 'Category 1', value: 'cat1' },
+        { text: 'Category 2', value: 'cat2' },
+        { text: 'Category 3', value: 'cat3', icon: 'album' },
+      ];
+    </script>
     <!-- <my-alert kind="info" text="This is a very important alert"></my-alert>
     <my-alert kind="success" text="Well done"></my-alert>
     <my-alert kind="error" text="Something went wrong"></my-alert> -->
